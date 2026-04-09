@@ -29,7 +29,7 @@ public class RentalService {
 			basicPayment = pricePerHour * Math.ceil(hours);
 		}
 		else {
-			basicPayment = pricePerDay * Math.ceil(hours / 24);
+			basicPayment = pricePerDay * Math.ceil(hours / 24.0);
 		}
 		
 		double tax = taxService.tax(basicPayment);
